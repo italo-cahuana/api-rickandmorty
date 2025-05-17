@@ -1,0 +1,56 @@
+* {
+    padding: 1%;
+}
+body {
+  background-color: black;
+  background: linear-gradient(-90deg, #46052f, #5e419e, #0e613a); /* angulo de animacion y colores */
+  background-size: 400% 400%; /* Aumentamos el tamaño del fondo para que se mueva */
+  animation: gradientBG 2.8s ease infinite; /* Aplicamos la animación */
+}
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+.titulo {
+  color: #f7fc00;
+}
+.divTitulo {
+  background-color: rgba(255, 255, 255, 0.2); /* fondo blanco transparente */
+  backdrop-filter: blur(10px); /* desenfoque del fondo */
+  -webkit-backdrop-filter: blur(10px); /* para Safari */
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.3); /* borde sutil */
+
+  animation: pulse 1.3s infinite;
+  transition: transform 0.3s ease-in-out;
+}
+@keyframes pulse {
+  0% {transform: scale(1);}
+  50% {transform: scale(1.03);}
+  100% {transform: scale(1);}
+}
+.botones {
+  background-color: rgba(255, 255, 255, 0.2); /* fondo blanco transparente */
+  backdrop-filter: blur(10px); /* desenfoque del fondo */
+  -webkit-backdrop-filter: blur(10px); /* para Safari */
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.3); /* borde sutil */
+}
+#datos .card {
+  background-color: rgba(255, 255, 255, 0.2); /* fondo blanco transparente */
+  backdrop-filter: blur(10px); /* desenfoque del fondo */
+  -webkit-backdrop-filter: blur(10px); /* para Safari */
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.3); /* borde sutil */
+}
+
